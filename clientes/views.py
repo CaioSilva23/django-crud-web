@@ -9,7 +9,13 @@ def listar_clientes(request):
     clientes = Cliente.objects.all()
     return render(request, 'clientes/lista_clientes.html', {'clientes': clientes})
 
-def inserir_cliente(request):
-    form = ClienteForms()
-    return render(request, 'clientes/form_cliente.html', {'form': form})
 
+def inserir_cliente(request):
+    if request.method == "POST":
+        # instancia do formulario recebendo os dados da requisição
+        form = ClienteForms(request.POST)
+        if form.is_valid():
+            form.save()
+    else:
+        form = ClienteForms()
+    return render(request,'clientes/form_cliente.html',{'form':form})
