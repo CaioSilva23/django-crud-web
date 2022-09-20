@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Cliente
-from .forms import ClienteForms
+from .forms import ClienteForm
 
 
 # Create your views here.
@@ -13,9 +13,9 @@ def listar_clientes(request):
 def inserir_cliente(request):
     if request.method == "POST":
         # instancia do formulario recebendo os dados da requisição
-        form = ClienteForms(request.POST)
+        form = ClienteForm(request.POST)
         if form.is_valid():
             form.save()
     else:
-        form = ClienteForms()
-    return render(request,'clientes/form_cliente.html',{'form':form})
+        form = ClienteForm()
+    return render(request, 'clientes/form_cliente.html', {'form': form})

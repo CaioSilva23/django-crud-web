@@ -5,26 +5,31 @@
     <title>Title</title>
 </head>
 <body>
-    <form method="post">
+    <form method="POST">
     <!-- FORMULÁRIO PRONTO DO DJANGO{{ form.as_p }} -->
         {% csrf_token %} <!-- VALIDA AS INFORMAÇÕES -->
         <div>
+            {{ form.nome.errors }}
             <label>Nome:</label>
-            {{ form.nome }} <br>
+            {{ form.nome }}
         </div>
         <div>
+            {{ form.sexo.errors }}
             <label>Sexo:</label>
             {{ form.sexo }}
         </div>
         <div>
+            {{ form.data_nascimento.errors }}
             <label>Data de Nascimento:</label>
             {{ form.data_nascimento }}
         </div>
         <div>
+            {{ form.email.errors }}
             <label>Email:</label>
             {{ form.email }}
         </div>
         <div>
+            {{ form.profissao.errors }}
             <label>Profissao:</label>
             {{ form.profissao }}
         </div>
