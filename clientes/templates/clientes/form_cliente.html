@@ -1,41 +1,41 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-    <form method="POST">
-    <!-- FORMULÁRIO PRONTO DO DJANGO{{ form.as_p }} -->
-        {% csrf_token %} <!-- VALIDA AS INFORMAÇÕES -->
-        <div>
-            {{ form.nome.errors }}
-            <label>Nome:</label>
-            {{ form.nome }}
-        </div>
-        <div>
-            {{ form.sexo.errors }}
-            <label>Sexo:</label>
-            {{ form.sexo }}
-        </div>
-        <div>
-            {{ form.data_nascimento.errors }}
-            <label>Data de Nascimento:</label>
-            {{ form.data_nascimento }}
-        </div>
-        <div>
-            {{ form.email.errors }}
-            <label>Email:</label>
-            {{ form.email }}
-        </div>
-        <div>
-            {{ form.profissao.errors }}
-            <label>Profissao:</label>
-            {{ form.profissao }}
-        </div>
-        <div>
-            <input type="submit" name="Cadastrar">
-        </div>
-    </form>
-</body>
-</html>
+{% extends "clientes/base.html" %}
+{% load meus_filtros %}
+
+{% block titulo %}
+Cadastro de clientes
+{% endblock titulo%}
+
+{% block conteudo %}
+<form method="POST">
+<!-- FORMULÁRIO PRONTO DO DJANGO{{ form.as_p }} -->
+    {% csrf_token %} <!-- VALIDA AS INFORMAÇÕES -->
+    <div class="form-group">
+        {{ form.nome.errors }} <!-- EXIBE ERRROS DE VALIDAÇÃO CASO OCORRA! -->
+        <label>Nome:</label>
+        {{ form.nome |addclass:'form-control' }}
+    </div>
+    <div class="form-group">
+        {{ form.sexo.errors }}
+        <label>Sexo:</label>
+        {{ form.sexo |addclass:'form-control' }}
+    </div>
+    <div class="form-group">
+        {{ form.data_nascimento.errors }}
+        <label>Data de Nascimento:</label>
+        {{ form.data_nascimento |addclass:'form-control' }}
+    </div>
+    <div class="form-group">
+        {{ form.email.errors }}
+        <label>Email:</label>
+        {{ form.email |addclass:'form-control'}}
+    </div>
+    <div class="form-group">
+        {{ form.profissao.errors }}
+        <label>Profissao:</label>
+        {{ form.profissao |addclass:'form-control'}}
+    </div>
+    <div class="form-group">
+        <input type="submit" name="Cadastrar">
+    </div>
+</form>
+{% endblock conteudo%}
