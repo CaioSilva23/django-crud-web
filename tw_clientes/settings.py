@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'tw_clientes.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'tw_django_fundamentos',
+        'NAME': 'crud_web',
         'USER': 'root',
         'PASSWORD': '1234',
         'HOST': 'localhost',
