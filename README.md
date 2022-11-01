@@ -24,7 +24,7 @@ git clone https://github.com/CaioSilva23/django-crud-web.git
 - Para **Windows**:
 
 ```
-cd django-simple-ecommerce
+cd django-crud-web
 python -m venv venv
 venv\Scripts\activate.bat
 python -m pip install --upgrade pip setuptools wheel --user
@@ -36,7 +36,7 @@ python manage.py runserver
 - Para **Linux**:
 
 ```
-cd django-simple-ecommerce
+cd django-crud-web
 python3.7 -m venv venv
 . venv/bin/activate
 pip install Django==4.1.2
@@ -46,7 +46,7 @@ python manage.py runserver
 - Para **Mac**
 
 ```
-cd django-simple-ecommerce
+cd django-crud-web
 python -m venv venv
 . venv/bin/activate
 pip install python -m pip install Django==4.1.2
