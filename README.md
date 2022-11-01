@@ -1,4 +1,4 @@
-# Projeto E-commerce 
+# CRUD CLIENTES
 Um projeto extremamente simples (CRUD DE CLIENTES) feito com  Django e Python.
 
 ### TODOs
@@ -17,7 +17,7 @@ máquina local:
 - Instalar git (Windows, Linux e Mac) e depois:
 
 ```
-git clone https://github.com/luizomf/django-simple-ecommerce.git
+git clone https://github.com/CaioSilva23/django-crud-web.git
 ```
 
 - Para **Windows**:
@@ -27,8 +27,9 @@ cd django-simple-ecommerce
 python -m venv venv
 venv\Scripts\activate.bat
 python -m pip install --upgrade pip setuptools wheel --user
-python -m pip install django django-debug-toolbar django-crispy-forms pillow
+python -m pip install Django==4.1.2
 python manage.py migrate
+python manage.py runserver
 ```
 
 - Para **Linux**:
@@ -37,8 +38,8 @@ python manage.py migrate
 cd django-simple-ecommerce
 python3.7 -m venv venv
 . venv/bin/activate
-pip install django django-debug-toolbar django-crispy-forms pillow
-python manage.py migrate
+pip install Django==4.1.2
+python manage.py runserver
 ```
 
 - Para **Mac**
@@ -47,8 +48,8 @@ python manage.py migrate
 cd django-simple-ecommerce
 python -m venv venv
 . venv/bin/activate
-pip install django django-debug-toolbar django-crispy-forms pillow
-python manage.py migrate
+pip install python -m pip install Django==4.1.2
+python manage.py runserver
 ```
 
 Pronto!
