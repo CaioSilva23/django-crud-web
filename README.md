@@ -26,7 +26,7 @@ git clone https://github.com/CaioSilva23/django-crud-web.git
 ```
 cd django-crud-web
 python -m venv venv
-venv\Scripts\activate.bat
+venv\Scripts\activate
 python -m pip install --upgrade pip setuptools wheel --user
 python -m pip install Django==4.1.2
 python manage.py migrate
@@ -37,7 +37,7 @@ python manage.py runserver
 
 ```
 cd django-crud-web
-python3.7 -m venv venv
+python3.10 -m venv venv
 . venv/bin/activate
 pip install Django==4.1.2
 python manage.py runserver
