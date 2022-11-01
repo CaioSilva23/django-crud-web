@@ -5,6 +5,7 @@ Um projeto extremamente simples (CRUD DE CLIENTES) feito com  Django e Python.
 Abaixo uma lista do que adicionei ou ainda pretendo adicionar.
 
 - [x] Model Cliente
+- [x ] Cadastrar um Cliente 
 - [x] Listagem e detalhes Clientes
 - [x] Remover um Cliente
 - [x] Editar um Cliente
