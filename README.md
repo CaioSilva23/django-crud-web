@@ -1,5 +1,16 @@
 # CRUD CLIENTES
-Um projeto extremamente simples (CRUD DE CLIENTES) feito com  Django e Python.
+Um projeto extremamente simples (CRUD DE CLIENTES).
+
+
+### TECNOLOGIAS  UTILIZADAS NO PROJETO
+
+- **Python**
+- **Django**
+
+- **HTML5**
+- **CSS3**
+
+
 
 ### TODOs
 Abaixo uma lista do que adicionei ou ainda pretendo adicionar.
@@ -28,7 +39,7 @@ cd django-crud-web
 python -m venv venv
 venv\Scripts\activate
 python -m pip install --upgrade pip setuptools wheel --user
-python -m pip install Django==4.1.2
+python -m pip install Django
 python manage.py migrate
 python manage.py runserver
 ```
@@ -39,19 +50,11 @@ python manage.py runserver
 cd django-crud-web
 python3.10 -m venv venv
 . venv/bin/activate
-pip install Django==4.1.2
+pip install Django
+python manage.py migrate
 python manage.py runserver
 ```
 
-- Para **Mac**
-
-```
-cd django-crud-web
-python -m venv venv
-. venv/bin/activate
-pip install python -m pip install Django==4.1.2
-python manage.py runserver
-```
 
 Pronto!
 
